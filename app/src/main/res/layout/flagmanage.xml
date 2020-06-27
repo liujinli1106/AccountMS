@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flagmanage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="便签管理"
+        android:textColor="@color/titleFont"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFlagManage"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="请输入便签，最多输入200字"
+        android:textColor="@color/promptFont"
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/txtFlagTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="2020-06-01"
+        android:textColor="@color/nomalFont"
+        android:inputType="datetime" />
+
+
+    <EditText
+        android:id="@+id/txtFlagManage"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:gravity="top"
+        android:singleLine="false" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnFlagManageDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_btn"
+            android:text="删除" />
+
+        <Button
+            android:id="@+id/btnFlagManageEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_btn"
+            android:text="修改" />
+    </LinearLayout>
+
+</LinearLayout>

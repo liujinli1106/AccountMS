@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:gravity="center"
+    android:padding="5dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/TxtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/appname"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/nomalFont"
+        android:textSize="33sp"
+        app:fontFamily="sans-serif-condensed-medium" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TxtTitle"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="app"
+        android:src="@drawable/app" />
+
+    <TextView
+        android:id="@+id/tvPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignBaseline="@+id/txtLogin"
+        android:layout_alignBottom="@+id/txtLogin"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/passworld"
+        android:textColor="@color/promptFont"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/txtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@+id/iv1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/tvPwd"
+        android:hint="@string/inpassworld"
+        android:inputType="textPassword"
+        android:textColor="@color/nomalFont" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLogin"
+        android:layout_centerHorizontal="true"
+       >
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_btn"
+            android:text="@string/enter"
+            android:textSize="26dp" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/bg_btn"
+            android:text="@string/cancel"
+            android:textSize="26dp" />
+    </LinearLayout>
+
+</RelativeLayout>

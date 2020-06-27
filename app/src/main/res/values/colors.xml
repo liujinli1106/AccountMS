@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E0E0E0</color>
+    <color name="colorPrimaryDark">#BDBDBD</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="backgroundColor">#E0E0E0</color>
+    <color name="nomalFont">#9E9E9E</color>
+    <color name="promptFont">#616161</color>
+    <color name="titleFont">#424242</color>
+    <color name="btnPress">#757575</color>
+    <color name="btnnotPress">#BDBDBD</color>
+</resources>

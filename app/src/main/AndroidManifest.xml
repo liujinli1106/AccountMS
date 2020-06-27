@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liujinli.accountms">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/appname"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.TotalChart"></activity>
+        <activity android:name=".activity.FlagManage" />
+        <activity android:name=".activity.InfoMange" />
+        <activity android:name=".activity.Sysset" />
+        <activity android:name=".activity.Showinfo" />
+        <activity android:name=".activity.Outaccountinfo" />
+        <activity android:name=".activity.Inaccountinfo" />
+        <activity android:name=".activity.Help" />
+        <activity android:name=".activity.AddOutaccount" />
+        <activity android:name=".activity.AddInaccount" />
+        <activity android:name=".activity.Accountflag" />
+        <activity android:name=".activity.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+    </application>
+
+</manifest>
